@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.board {
+  margin-top: 20vh;
+  height: 40vh;
+  width: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  margin: -1px;
+  background-color: aqua;
+  border: 1px solid black;
+}
