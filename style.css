@@ -1,10 +1,18 @@
+@font-face {
+  src: url(fonts/AOTFShinGoProBold.otf);
+  font-family: shinGo;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: shinGo;
 }
 body {
+  color: white;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(68, 68, 68);
 }
 .board {
   margin-top: 20vh;
@@ -15,7 +23,35 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .cell {
-  margin: -1px;
-  background-color: aqua;
-  border: 1px solid black;
+  margin: -5px;
+  background-color: rgb(255, 255, 255);
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: black;
+}
+#c-0,#c-1,#c-2 {
+  border-top: none
+}
+#c-0,#c-3,#c-6 {
+  border-left: none
+}
+#c-6,#c-7,#c-8 {
+  border-bottom: none;
+}
+#c-2,#c-5,#c-8 {
+  border-right: none;
+}
+button img {
+  width: 2rem;
+}
+button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 4rem;
+  height: 2.5rem
 }
